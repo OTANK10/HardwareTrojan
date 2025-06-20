@@ -1,4 +1,4 @@
-#H1 Hardware Trojan Detection using Unsupervised Learning and Simulation-Based Side-Channel Features
+#H1 Hardware Trojan Detection using Unsupervised Learning and Simulation-Based Side-Channel Features #H1
 
 
 
