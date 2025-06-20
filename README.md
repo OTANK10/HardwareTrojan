@@ -1,5 +1,5 @@
-Hardware Trojan Detection using Unsupervised Learning and Simulation-Based Side-Channel Features
-![image](https://github.com/user-attachments/assets/b68621db-d073-4b0c-b74c-1b08c311ba33)
+* Hardware Trojan Detection using Unsupervised Learning and Simulation-Based Side-Channel Features
+
 
 
 * Overview
@@ -59,13 +59,16 @@ We implemented three distinct types of circuits to evaluate our detection method
 4-bit Counter Implementation : 
 
 Our primary test case was a simple 4-bit counter, implemented in both clean and Trojan-infected versions. The Trojan counter implementation is shown below:
+
 ![image](https://github.com/user-attachments/assets/f0e320af-a12a-42af-afff-1f0fee9a1a09)
 
 * Testbench Implementation
 To simulate and compare the behavior of clean and Trojan-infected counters, we developed a comprehensive testbench:
+
 ![image](https://github.com/user-attachments/assets/40d2ee67-51ab-401e-a07c-6970614b0b43)
 
 * Simulation Results and Feature Extraction
+* 
 ![image](https://github.com/user-attachments/assets/b517014c-407c-494d-845a-7ad2c95b3e7e)
 
 The waveform clearly shows the behavioral difference between the two counters. The clean counter (top) increments continuously through all values, while the Trojan counter (bottom) resets to zero when it reaches the value 10 (binary 1010). This difference, while easily visible in this simple example, would be much harder to detect in a complex design with thousands of signals.
@@ -97,6 +100,7 @@ The Trojan counter showed interruptions in this pattern, with resets to 0 weight
 * Unsupervised Learning Implementation
 
 With our normalized feature vectors, we applied dimensionality reduction and clustering algorithms:
+
 ![image](https://github.com/user-attachments/assets/4e228c44-a2c1-4e20-8112-79dc097014d3)
 
 * Clustering Performance
